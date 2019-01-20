@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="CVu-Lu-kLU" customClass="ItemsCollectionBottomReusableView" customModule="PagedFeed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kiO-bU-TE6">
+                    <rect key="frame" x="150" y="15" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have reached the end." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN4-rO-mPM">
+                    <rect key="frame" x="84.5" y="17.5" width="151" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.32549019610000002" green="0.32549019610000002" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fDk-Fz-pDT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                    <state key="normal" title="Something went wrong. Try again.">
+                        <color key="titleColor" red="0.74509803919999995" green="0.17254901959999999" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tryAgainTapped" destination="CVu-Lu-kLU" eventType="touchUpInside" id="iZa-4a-7Te"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NN4-rO-mPM" firstAttribute="centerY" secondItem="CVu-Lu-kLU" secondAttribute="centerY" id="7Qd-LE-dM8"/>
+                <constraint firstItem="kiO-bU-TE6" firstAttribute="centerX" secondItem="CVu-Lu-kLU" secondAttribute="centerX" id="ODA-HJ-sh4"/>
+                <constraint firstItem="kiO-bU-TE6" firstAttribute="centerY" secondItem="CVu-Lu-kLU" secondAttribute="centerY" id="Uah-GS-THA"/>
+                <constraint firstAttribute="bottom" secondItem="fDk-Fz-pDT" secondAttribute="bottom" id="Zbs-Nz-TTh"/>
+                <constraint firstAttribute="trailing" secondItem="fDk-Fz-pDT" secondAttribute="trailing" id="cGy-Ta-M1g"/>
+                <constraint firstItem="fDk-Fz-pDT" firstAttribute="leading" secondItem="CVu-Lu-kLU" secondAttribute="leading" id="gsJ-Fj-Nqg"/>
+                <constraint firstItem="fDk-Fz-pDT" firstAttribute="top" secondItem="CVu-Lu-kLU" secondAttribute="top" id="s7t-KE-FQC"/>
+                <constraint firstItem="NN4-rO-mPM" firstAttribute="centerX" secondItem="CVu-Lu-kLU" secondAttribute="centerX" id="wlK-j3-YV2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="kAv-g5-tJB"/>
+            <connections>
+                <outlet property="activityIndicator" destination="kiO-bU-TE6" id="XrY-0X-pb7"/>
+                <outlet property="theEndLabel" destination="NN4-rO-mPM" id="mcl-uu-A9b"/>
+                <outlet property="tryAgainButton" destination="fDk-Fz-pDT" id="cgy-e7-okz"/>
+            </connections>
+            <point key="canvasLocation" x="444" y="300"/>
+        </collectionReusableView>
+    </objects>
+</document>
