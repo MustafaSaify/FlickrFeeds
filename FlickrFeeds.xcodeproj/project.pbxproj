@@ -110,6 +110,7 @@
 		CF62609D21EC8B27008BFF9B /* NetworkImageAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageAccess.swift; sourceTree = "<group>"; };
 		CF62609F21EC8B27008BFF9B /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		CF6260C821F4BC71008BFF9B /* DaoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaoTest.swift; sourceTree = "<group>"; };
+		CF6260CD21F4D6C2008BFF9B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +134,7 @@
 		CF168EF821EB784600C0BE64 = {
 			isa = PBXGroup;
 			children = (
+				CF6260CD21F4D6C2008BFF9B /* README.md */,
 				CF168F0321EB784600C0BE64 /* FlickrFeeds */,
 				CF168F1821EB784900C0BE64 /* FlickrFeedsTests */,
 				CF168F0221EB784600C0BE64 /* Products */,
