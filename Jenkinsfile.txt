@@ -1,0 +1,39 @@
+#!groovy
+
+pipeline {
+agent any
+
+stages {
+stage('Checkout') {
+steps {
+checkout scm
+}
+}
+
+stage('Dependecies') {
+steps {
+sh '/usr/local/bin/pod install'
+}
+}
+
+stage('Running Tests') {
+steps {
+parallel (
+"Unit Tests": {
+sh 'echo "Unit Tests"'
+sh 'fastlane scan'
+},
+"UI Automation": {
+sh 'echo "UI Automation"'
+}
+)
+}
+}
+
+stage('Deploy') {
+steps {
+sh 'echo "Deploy"'
+}
+}
+}
+}

@@ -18,6 +18,7 @@
 		CF168F4521EB833200C0BE64 /* FeedListConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF168F4421EB833200C0BE64 /* FeedListConfiguration.swift */; };
 		CF168F4721EB839C00C0BE64 /* FeedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF168F4621EB839C00C0BE64 /* FeedListViewModel.swift */; };
 		CF168F4A21EB862100C0BE64 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF168F4921EB862100C0BE64 /* Observable.swift */; };
+		CF439C4823205E5900317FE8 /* Jenkinsfile.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF439C4723205E5900317FE8 /* Jenkinsfile.txt */; };
 		CF62605321E5BC84008BFF9B /* SearchFeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62605221E5BC84008BFF9B /* SearchFeedsViewController.swift */; };
 		CF62605721E5BD0D008BFF9B /* FeedResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62605621E5BD0D008BFF9B /* FeedResource.swift */; };
 		CF62605921E5BD59008BFF9B /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF62605821E5BD59008BFF9B /* Synchronizer.swift */; };
@@ -78,6 +79,7 @@
 		CF168F4421EB833200C0BE64 /* FeedListConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListConfiguration.swift; sourceTree = "<group>"; };
 		CF168F4621EB839C00C0BE64 /* FeedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedListViewModel.swift; sourceTree = "<group>"; };
 		CF168F4921EB862100C0BE64 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		CF439C4723205E5900317FE8 /* Jenkinsfile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jenkinsfile.txt; sourceTree = "<group>"; };
 		CF62605221E5BC84008BFF9B /* SearchFeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeedsViewController.swift; sourceTree = "<group>"; };
 		CF62605621E5BD0D008BFF9B /* FeedResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResource.swift; sourceTree = "<group>"; };
 		CF62605821E5BD59008BFF9B /* Synchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizer.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		CF168EF821EB784600C0BE64 = {
 			isa = PBXGroup;
 			children = (
+				CF439C4723205E5900317FE8 /* Jenkinsfile.txt */,
 				CF6260CD21F4D6C2008BFF9B /* README.md */,
 				CF168F0321EB784600C0BE64 /* FlickrFeeds */,
 				CF168F1821EB784900C0BE64 /* FlickrFeedsTests */,
@@ -445,6 +448,7 @@
 				CF168F0F21EB784800C0BE64 /* LaunchScreen.storyboard in Resources */,
 				CF62608521E8BCC3008BFF9B /* ItemCollectionViewCell.xib in Resources */,
 				CF168F0C21EB784800C0BE64 /* Assets.xcassets in Resources */,
+				CF439C4823205E5900317FE8 /* Jenkinsfile.txt in Resources */,
 				CF62608921EC8B27008BFF9B /* ItemsCollectionBottomReusableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
